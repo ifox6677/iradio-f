@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- App 主风格 -->
+    <style name="Theme.iRadio" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- 主色（你最喜欢的 #0711b2） -->
+        <item name="colorPrimary">#0711b2</item>
+        <item name="colorPrimaryVariant">#0A149F</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- 次色（更亮一点，让UI有层次） -->
+        <item name="colorSecondary">#3A4BFF</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <!-- 全局背景：柔和干净 -->
+        <item name="android:windowBackground">#1565C0</item>
+
+        <!-- 全局控件背景：更亮，更现代 -->
+        <item name="android:colorBackground">#FF1976D2</item>
+
+        <!-- 文本颜色 -->
+        <item name="android:textColorPrimary">#1A1A1A</item>
+        <item name="android:textColorSecondary">#4A4A4A</item>
+
+        <!-- 按钮更现代圆角 -->
+        <item name="shapeAppearanceSmallComponent">@style/RoundedShape</item>
+        <item name="shapeAppearanceMediumComponent">@style/RoundedShape</item>
+        <item name="shapeAppearanceLargeComponent">@style/RoundedShape</item>
+
+    </style>
+
+    <!-- 通用圆角样式（更高级） -->
+    <style name="RoundedShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>
