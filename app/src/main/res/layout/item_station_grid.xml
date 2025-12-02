@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 根布局 -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 电台 LOGO -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="电台LOGO" />
+
+    <!-- 电台名称 -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- 播放按钮 -->
+    <com.google.android.material.button.MaterialButton
+    android:id="@+id/playBtn"
+    android:layout_width="56dp"
+    android:layout_height="56dp"
+    android:layout_marginTop="12dp"
+
+    android:minWidth="0dp"
+    android:minHeight="0dp"
+    android:padding="0dp"
+
+    android:backgroundTint="#2196F3"
+    app:cornerRadius="28dp"
+
+    app:icon="@android:drawable/ic_media_play"
+    app:iconSize="32dp"
+    app:iconTint="@android:color/white"
+    app:iconPadding="0dp"
+    app:iconGravity="textStart"
+
+    style="@style/Widget.MaterialComponents.Button" />
+
+
+</LinearLayout>
