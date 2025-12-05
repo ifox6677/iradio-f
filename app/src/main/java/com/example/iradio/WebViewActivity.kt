@@ -5,7 +5,6 @@ import android.content.*
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.util.Log
 import android.view.Gravity
 import android.view.ViewGroup
 import android.webkit.*
@@ -13,13 +12,10 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import okhttp3.OkHttpClient
-import okhttp3.Request
 
 class WebViewActivity : AppCompatActivity() {
 
     companion object {
-        private const val TAG = "WebViewAudioGrab"
         private var lastGrabbedUrl: String? = null
 
         @JvmStatic
@@ -40,6 +36,10 @@ class WebViewActivity : AppCompatActivity() {
     private lateinit var stopButton: TextView
     private var currentTitle: String = "网页电台"
     private var grabState = 0 // 0=未开始 1=抓流中 2=已抓到
+
+    private var grabRetryCount = 0
+    private val maxGrabRetry = 3
+    private val grabTimeoutMillis = 2000L // 2秒超时
 
     // ------------------ Broadcast Receivers -------------------
     private val destroyReceiver = object : BroadcastReceiver() {
@@ -65,7 +65,7 @@ class WebViewActivity : AppCompatActivity() {
         registerSafeReceiver(destroyReceiver, "DESTROY_WEBVIEW")
         registerSafeReceiver(stopGrabReceiver, "STOP_WEB_GRAB")
 
-        /* ---------- 简单 UI ---------- */
+        // ---------- UI ----------
         titleBar = TextView(this).apply {
             text = "加载中..."
             setTextColor(Color.WHITE)
@@ -158,6 +158,23 @@ class WebViewActivity : AppCompatActivity() {
         updateButtonUI()
         Toast.makeText(this, "开始抓流…", Toast.LENGTH_SHORT).show()
         injectGrabScript()
+        checkGrabResultWithTimeout()
+    }
+
+    private fun checkGrabResultWithTimeout() {
+        val initialRetry = grabRetryCount
+        webView.postDelayed({
+            if (grabState != 2 && grabRetryCount == initialRetry && grabRetryCount < maxGrabRetry) {
+                grabRetryCount++
+                Toast.makeText(this, "抓流未成功，重新尝试 (${grabRetryCount}) …", Toast.LENGTH_SHORT).show()
+                grabState = 0
+				releaseOldGrab()
+                grabState = 1
+                updateButtonUI()
+                injectGrabScript()
+                checkGrabResultWithTimeout()
+            }
+        }, grabTimeoutMillis)
     }
 
     private fun stopGrabbing() {
@@ -173,6 +190,7 @@ class WebViewActivity : AppCompatActivity() {
         updateButtonUI()
         Toast.makeText(this, "已释放旧流，重新抓源中…", Toast.LENGTH_SHORT).show()
         injectGrabScript()
+        checkGrabResultWithTimeout()
     }
 
     private fun releaseOldGrab() {
@@ -188,9 +206,7 @@ class WebViewActivity : AppCompatActivity() {
                     });
                 })();
             """.trimIndent(), null)
-        } catch (e: Exception) {
-            Log.e(TAG, "释放旧抓流失败", e)
-        }
+        } catch (_: Exception) {}
     }
 
     @Synchronized
@@ -198,6 +214,7 @@ class WebViewActivity : AppCompatActivity() {
         if (grabState != 1) return
         lastGrabbedUrl = url
         grabState = 2
+        grabRetryCount = 0
         updateButtonUI()
         Toast.makeText(this, "已切换到独立播放器", Toast.LENGTH_SHORT).show()
         WebViewPlaybackService.playStream(this, url, currentTitle)
@@ -272,7 +289,10 @@ class WebViewActivity : AppCompatActivity() {
             override fun onPageFinished(view: WebView?, url: String?) {
                 super.onPageFinished(view, url)
                 releaseOldGrab()
-                if (grabState == 0) webView.postDelayed({ if (grabState == 0) startGrabbing() }, 5000)
+                if (grabState == 0) {
+                    grabRetryCount = 0
+                    webView.postDelayed({ if (grabState == 0) startGrabbing() }, 1000)
+                }
                 injectGrabScript()
             }
         }
@@ -290,7 +310,6 @@ class WebViewActivity : AppCompatActivity() {
         val url = intent?.getStringExtra("url") ?: return
         currentTitle = intent.getStringExtra("title") ?: "网页电台"
         titleBar.text = currentTitle
-        /* 不再识别播客，直接加载网页 */
         webView.loadUrl(url)
     }
 
