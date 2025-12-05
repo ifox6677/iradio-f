@@ -3,16 +3,17 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+
 android {
     namespace = "com.example.iradio"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.iradio"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
-        versionName = "3.5.3"
+        versionName = "3.5.6"
     }
 
     buildTypes {
