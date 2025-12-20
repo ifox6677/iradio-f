@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="playback_progress" />
+    <item type="id" name="current_time" />
+    <item type="id" name="total_time" />
+    <item type="id" name="play_pause_button" />
+    <item type="id" name="duration_badge" />
+    <item type="id" name="playback_seekbar" /> <!-- 添加这一行 -->
+</resources>
