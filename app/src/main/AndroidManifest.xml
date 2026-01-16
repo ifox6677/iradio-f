@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.iradio">
-
+    package="com.zhangjq0908.iradio">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
-        android:label="CloudRadio "
+        android:label="悦听"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:allowBackup="true"
@@ -25,6 +24,12 @@
             android:name=".PodcastActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".YTListActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
 
         <!-- 主页面 -->
         <activity
@@ -48,9 +53,20 @@
             android:foregroundServiceType="mediaPlayback"
             android:exported="false" />
 
-        <!-- ★★★★★ 添加 receiver（解决 RECEIVER_EXPORTED 警告）★★★★★ -->
+        <!-- ★★★★★ 以下为动态 receiver 的安全声明（必须）★★★★★ -->
+        <!-- 用于 NOW_PLAYING_UPDATE / 播放信息同步 -->
+        <receiver
+            android:name=".NowPlayingReceiver"
+            android:exported="false" />
 
-        <!-- ★★★★★ 完成 ★★★★★ -->
+        <!-- 用于来电停止播放（PhoneStateReceiver） -->
+        <receiver
+            android:name=".PhoneStateReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
 
     </application>
 
