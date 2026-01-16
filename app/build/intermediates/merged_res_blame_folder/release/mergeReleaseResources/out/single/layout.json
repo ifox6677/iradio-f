@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "com.zhangjq0908.iradio.app-mergeReleaseResources-33:/layout/fragment_group.xml",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/fragment_group.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-mergeReleaseResources-33:/layout/item_station_grid.xml",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/item_station_grid.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-mergeReleaseResources-33:/layout/activity_main.xml",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-mergeReleaseResources-33:/layout/activity_webview.xml",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/activity_webview.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-mergeReleaseResources-33:/layout/dialog_sleep_timer.xml",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/dialog_sleep_timer.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-mergeReleaseResources-33:/layout/item_episode.xml",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/item_episode.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-mergeReleaseResources-33:/layout/dialog_timer_grid.xml",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/dialog_timer_grid.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-mergeReleaseResources-33:/layout/activity_podcast.xml",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/activity_podcast.xml"
+    }
+]

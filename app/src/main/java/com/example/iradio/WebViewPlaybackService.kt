@@ -382,7 +382,7 @@ class WebViewPlaybackService : Service() {
     // 播放URL
     private fun playUrl(url: String) {
         //Log.d(TAG, "开始播放URL: ${url.take(50)}...")
-        
+        PlayerService.stop(this)
         stopProgressUpdates()
         
         if (player == null) {

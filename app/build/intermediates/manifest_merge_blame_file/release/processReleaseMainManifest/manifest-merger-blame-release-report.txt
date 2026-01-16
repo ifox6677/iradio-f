@@ -1,0 +1,214 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.zhangjq0908.iradio"
+4    android:versionCode="1"
+5    android:versionName="0.3.6" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="35" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\iRadio3\app\src\main\AndroidManifest.xml:4:5-67
+11-->D:\iRadio3\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->D:\iRadio3\app\src\main\AndroidManifest.xml:5:5-77
+12-->D:\iRadio3\app\src\main\AndroidManifest.xml:5:22-74
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+13-->D:\iRadio3\app\src\main\AndroidManifest.xml:6:5-92
+13-->D:\iRadio3\app\src\main\AndroidManifest.xml:6:22-89
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->D:\iRadio3\app\src\main\AndroidManifest.xml:7:5-77
+14-->D:\iRadio3\app\src\main\AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\Ami\.gradle\caches\8.9\transforms\8a686204658ea08a3934b6252e7ff018\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:5-79
+15-->[com.google.android.exoplayer:exoplayer-core:2.18.1] C:\Users\Ami\.gradle\caches\8.9\transforms\8a686204658ea08a3934b6252e7ff018\transformed\jetified-exoplayer-core-2.18.1\AndroidManifest.xml:24:22-76
+16
+17    <permission
+17-->[androidx.core:core:1.13.0] C:\Users\Ami\.gradle\caches\8.9\transforms\688f87cc72026080d9d539adc9098a24\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+18        android:name="com.zhangjq0908.iradio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+18-->[androidx.core:core:1.13.0] C:\Users\Ami\.gradle\caches\8.9\transforms\688f87cc72026080d9d539adc9098a24\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+19        android:protectionLevel="signature" />
+19-->[androidx.core:core:1.13.0] C:\Users\Ami\.gradle\caches\8.9\transforms\688f87cc72026080d9d539adc9098a24\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+20
+21    <uses-permission android:name="com.zhangjq0908.iradio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+21-->[androidx.core:core:1.13.0] C:\Users\Ami\.gradle\caches\8.9\transforms\688f87cc72026080d9d539adc9098a24\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+21-->[androidx.core:core:1.13.0] C:\Users\Ami\.gradle\caches\8.9\transforms\688f87cc72026080d9d539adc9098a24\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+22
+23    <application
+23-->D:\iRadio3\app\src\main\AndroidManifest.xml:9:5-71:19
+24        android:allowBackup="true"
+24-->D:\iRadio3\app\src\main\AndroidManifest.xml:13:9-35
+25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+25-->[androidx.core:core:1.13.0] C:\Users\Ami\.gradle\caches\8.9\transforms\688f87cc72026080d9d539adc9098a24\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+26        android:extractNativeLibs="false"
+27        android:icon="@mipmap/ic_launcher"
+27-->D:\iRadio3\app\src\main\AndroidManifest.xml:11:9-43
+28        android:label="悦听"
+28-->D:\iRadio3\app\src\main\AndroidManifest.xml:10:9-27
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->D:\iRadio3\app\src\main\AndroidManifest.xml:12:9-54
+30        android:theme="@style/Theme.iRadio"
+30-->D:\iRadio3\app\src\main\AndroidManifest.xml:15:9-44
+31        android:usesCleartextTraffic="true" >
+31-->D:\iRadio3\app\src\main\AndroidManifest.xml:14:9-44
+32
+33        <!-- Web 页面 -->
+34        <activity
+34-->D:\iRadio3\app\src\main\AndroidManifest.xml:18:9-21:40
+35            android:name="com.zhangjq0908.iradio.WebViewActivity"
+35-->D:\iRadio3\app\src\main\AndroidManifest.xml:19:13-44
+36            android:exported="false"
+36-->D:\iRadio3\app\src\main\AndroidManifest.xml:21:13-37
+37            android:launchMode="singleTask" />
+37-->D:\iRadio3\app\src\main\AndroidManifest.xml:20:13-44
+38        <activity
+38-->D:\iRadio3\app\src\main\AndroidManifest.xml:23:9-26:75
+39            android:name="com.zhangjq0908.iradio.PodcastActivity"
+39-->D:\iRadio3\app\src\main\AndroidManifest.xml:24:13-44
+40            android:exported="false"
+40-->D:\iRadio3\app\src\main\AndroidManifest.xml:25:13-37
+41            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+41-->D:\iRadio3\app\src\main\AndroidManifest.xml:26:13-72
+42        <activity
+42-->D:\iRadio3\app\src\main\AndroidManifest.xml:28:9-32:52
+43            android:name="com.zhangjq0908.iradio.YTListActivity"
+43-->D:\iRadio3\app\src\main\AndroidManifest.xml:29:13-43
+44            android:exported="false"
+44-->D:\iRadio3\app\src\main\AndroidManifest.xml:30:13-37
+45            android:launchMode="singleTop"
+45-->D:\iRadio3\app\src\main\AndroidManifest.xml:31:13-43
+46            android:screenOrientation="portrait" />
+46-->D:\iRadio3\app\src\main\AndroidManifest.xml:32:13-49
+47
+48        <!-- 主页面 -->
+49        <activity
+49-->D:\iRadio3\app\src\main\AndroidManifest.xml:35:9-42:20
+50            android:name="com.zhangjq0908.iradio.MainActivity"
+50-->D:\iRadio3\app\src\main\AndroidManifest.xml:36:13-41
+51            android:exported="true" >
+51-->D:\iRadio3\app\src\main\AndroidManifest.xml:37:13-36
+52            <intent-filter>
+52-->D:\iRadio3\app\src\main\AndroidManifest.xml:38:13-41:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->D:\iRadio3\app\src\main\AndroidManifest.xml:39:17-69
+53-->D:\iRadio3\app\src\main\AndroidManifest.xml:39:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->D:\iRadio3\app\src\main\AndroidManifest.xml:40:17-77
+55-->D:\iRadio3\app\src\main\AndroidManifest.xml:40:27-74
+56            </intent-filter>
+57        </activity>
+58
+59        <!-- ExoPlayer 播放服务 -->
+60        <service
+60-->D:\iRadio3\app\src\main\AndroidManifest.xml:45:9-48:40
+61            android:name="com.zhangjq0908.iradio.PlayerService"
+61-->D:\iRadio3\app\src\main\AndroidManifest.xml:46:13-42
+62            android:exported="false"
+62-->D:\iRadio3\app\src\main\AndroidManifest.xml:48:13-37
+63            android:foregroundServiceType="mediaPlayback" />
+63-->D:\iRadio3\app\src\main\AndroidManifest.xml:47:13-58
+64
+65        <!-- WebView 播放音频的前台服务 -->
+66        <service
+66-->D:\iRadio3\app\src\main\AndroidManifest.xml:51:9-54:40
+67            android:name="com.zhangjq0908.iradio.WebViewPlaybackService"
+67-->D:\iRadio3\app\src\main\AndroidManifest.xml:52:13-51
+68            android:exported="false"
+68-->D:\iRadio3\app\src\main\AndroidManifest.xml:54:13-37
+69            android:foregroundServiceType="mediaPlayback" />
+69-->D:\iRadio3\app\src\main\AndroidManifest.xml:53:13-58
+70
+71        <!-- ★★★★★ 以下为动态 receiver 的安全声明（必须）★★★★★ -->
+72        <!-- 用于 NOW_PLAYING_UPDATE / 播放信息同步 -->
+73        <receiver
+73-->D:\iRadio3\app\src\main\AndroidManifest.xml:58:9-60:40
+74            android:name="com.zhangjq0908.iradio.NowPlayingReceiver"
+74-->D:\iRadio3\app\src\main\AndroidManifest.xml:59:13-47
+75            android:exported="false" />
+75-->D:\iRadio3\app\src\main\AndroidManifest.xml:60:13-37
+76
+77        <!-- 用于来电停止播放（PhoneStateReceiver） -->
+78        <receiver
+78-->D:\iRadio3\app\src\main\AndroidManifest.xml:63:9-69:20
+79            android:name="com.zhangjq0908.iradio.PhoneStateReceiver"
+79-->D:\iRadio3\app\src\main\AndroidManifest.xml:64:13-47
+80            android:exported="false" >
+80-->D:\iRadio3\app\src\main\AndroidManifest.xml:65:13-37
+81            <intent-filter>
+81-->D:\iRadio3\app\src\main\AndroidManifest.xml:66:13-68:29
+82                <action android:name="android.intent.action.PHONE_STATE" />
+82-->D:\iRadio3\app\src\main\AndroidManifest.xml:67:17-76
+82-->D:\iRadio3\app\src\main\AndroidManifest.xml:67:25-73
+83            </intent-filter>
+84        </receiver>
+85
+86        <provider
+86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Ami\.gradle\caches\8.9\transforms\67f1b24ef5a10948742ff6cd2256414a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+87            android:name="androidx.startup.InitializationProvider"
+87-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Ami\.gradle\caches\8.9\transforms\67f1b24ef5a10948742ff6cd2256414a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+88            android:authorities="com.zhangjq0908.iradio.androidx-startup"
+88-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Ami\.gradle\caches\8.9\transforms\67f1b24ef5a10948742ff6cd2256414a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+89            android:exported="false" >
+89-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Ami\.gradle\caches\8.9\transforms\67f1b24ef5a10948742ff6cd2256414a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+90            <meta-data
+90-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Ami\.gradle\caches\8.9\transforms\67f1b24ef5a10948742ff6cd2256414a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+91                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+91-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Ami\.gradle\caches\8.9\transforms\67f1b24ef5a10948742ff6cd2256414a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+92                android:value="androidx.startup" />
+92-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Ami\.gradle\caches\8.9\transforms\67f1b24ef5a10948742ff6cd2256414a\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+93            <meta-data
+93-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Ami\.gradle\caches\8.9\transforms\a28f5633a03c0c484b4eb3ee56fc1c06\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+94                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+94-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Ami\.gradle\caches\8.9\transforms\a28f5633a03c0c484b4eb3ee56fc1c06\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+95                android:value="androidx.startup" />
+95-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Ami\.gradle\caches\8.9\transforms\a28f5633a03c0c484b4eb3ee56fc1c06\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+96            <meta-data
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+97                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+98                android:value="androidx.startup" />
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+99        </provider>
+100
+101        <receiver
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+102            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+103            android:directBootAware="false"
+103-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+104            android:enabled="true"
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+105            android:exported="true"
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+106            android:permission="android.permission.DUMP" >
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+108                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+109            </intent-filter>
+110            <intent-filter>
+110-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+111                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+111-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+112            </intent-filter>
+113            <intent-filter>
+113-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+114                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+114-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+115            </intent-filter>
+116            <intent-filter>
+116-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+117                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+117-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\Ami\.gradle\caches\8.9\transforms\6efb55de64ffb03661c38730674c27b3\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+118            </intent-filter>
+119        </receiver>
+120    </application>
+121
+122</manifest>

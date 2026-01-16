@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_sleep_timer"
+        android:icon="@drawable/ic_sleep_timer"
+        android:title="定时器"
+        app:showAsAction="always|withText" />  <!-- 关键：加 |withText -->
+</menu>

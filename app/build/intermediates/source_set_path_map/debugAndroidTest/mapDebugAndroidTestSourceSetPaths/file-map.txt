@@ -1,0 +1,4 @@
+com.zhangjq0908.iradio.test.app-androidTest-0 D:\iRadio3\app\build\generated\res\resValues\androidTest\debug
+com.zhangjq0908.iradio.test.app-mergeDebugAndroidTestResources-1 D:\iRadio3\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.zhangjq0908.iradio.test.app-mergeDebugAndroidTestResources-2 D:\iRadio3\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.zhangjq0908.iradio.test.app-debugAndroidTest-3 D:\iRadio3\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

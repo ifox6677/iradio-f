@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/layout_fragment_group.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/fragment_group.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/layout_dialog_sleep_timer.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/dialog_sleep_timer.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/layout_dialog_timer_grid.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/dialog_timer_grid.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_rect_button_gray.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/rect_button_gray.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_rounded_thumb.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/rounded_thumb.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_ic_sleep_timer.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/ic_sleep_timer.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_rounded_badge.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/rounded_badge.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-mdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-mdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_rounded_bg.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/rounded_bg.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_bg_playing.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/bg_playing.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-hdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-hdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_rect_button.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/rect_button.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_ic_stop.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/ic_stop.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_ic_play_arrow.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/ic_play_arrow.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_ic_play.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/ic_play.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/menu_menu_main.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/menu/menu_main.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_rounded_card.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/rounded_card.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xxxhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xxxhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_bg_timer_button.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/bg_timer_button.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_ic_launcher_foreground.png.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/layout_activity_podcast.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/activity_podcast.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_bg_normal.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/bg_normal.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-xhdpi_ic_launcher_foreground.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-xhdpi/ic_launcher_foreground.webp"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/layout_activity_main.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/layout_item_episode.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/item_episode.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/drawable_ic_playing.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/drawable/ic_playing.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/layout_item_station_grid.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/item_station_grid.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/layout_activity_webview.xml.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/layout/activity_webview.xml"
+    },
+    {
+        "merged": "com.zhangjq0908.iradio.app-release-34:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.zhangjq0908.iradio.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+    }
+]

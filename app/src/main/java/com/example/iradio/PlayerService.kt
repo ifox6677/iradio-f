@@ -57,7 +57,7 @@ class PlayerService : Service() {
             } catch (e: Exception) {
                 emptyList()
             }
-        }
+        }		
         fun fetchPlsUrlsSafe(
             plsUrl: String,
             maxEntries: Int = 5,
@@ -90,6 +90,12 @@ class PlayerService : Service() {
     
             return urls
         }
+        fun stop(context: Context) {
+            val intent = Intent(context, PlayerService::class.java).apply {
+                action = ACTION_STOP
+            }
+            context.startService(intent)
+        }		
     }		
 		
 

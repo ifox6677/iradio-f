@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#A39A9A</color>
+    <item name="current_time" type="id"/>
+    <item name="duration_badge" type="id"/>
+    <item name="play_pause_button" type="id"/>
+    <item name="playback_progress" type="id"/>
+    <item name="playback_seekbar" type="id"/>
+    <item name="total_time" type="id"/>
+    <string name="app_name">收音机</string>
+    <style name="RoundedShape" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="Theme.iRadio" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        
+        <item name="colorPrimary">#0711b2</item>
+        <item name="colorPrimaryVariant">#0A149F</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        
+        <item name="colorSecondary">#3A4BFF</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        
+        <item name="android:windowBackground">#1565C0</item>
+
+        
+        <item name="android:colorBackground">#FF1976D2</item>
+
+        
+        <item name="android:textColorPrimary">#1A1A1A</item>
+        <item name="android:textColorSecondary">#4A4A4A</item>
+
+        
+        <item name="shapeAppearanceSmallComponent">@style/RoundedShape</item>
+        <item name="shapeAppearanceMediumComponent">@style/RoundedShape</item>
+        <item name="shapeAppearanceLargeComponent">@style/RoundedShape</item>
+
+    </style>
+</resources>

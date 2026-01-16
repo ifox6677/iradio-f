@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#6C5CE7"/> <!-- 播放中绿色 -->
+    <corners android:radius="12dp"/>
+</shape>

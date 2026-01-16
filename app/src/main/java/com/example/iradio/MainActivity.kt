@@ -182,14 +182,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     // ==================== 停止播放（修改为新 PlayerService 兼容方式） ====================
-    private fun stopRadio() {
+/*    private fun stopRadio() {
         startService(
             Intent(this, PlayerService::class.java).apply {
                 action = PlayerService.ACTION_STOP
             }
         )
+    }*/
+    private fun stopRadio() {
+        PlayerService.stop(this)
     }
-
     override fun onDestroy() {
         uiScope.cancel()
         sleepTimer.cancel()
