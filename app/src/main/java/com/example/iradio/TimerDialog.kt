@@ -1,4 +1,4 @@
-package com.example.iradio
+package com.zhangjq0908.iradio
 
 import android.app.Dialog
 import android.content.Context
