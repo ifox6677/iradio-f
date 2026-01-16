@@ -1,4 +1,4 @@
-package com.example.iradio
+package com.zhangjq0908.iradio
 
 data class Station(
     val name: String,
