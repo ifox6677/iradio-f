@@ -37,9 +37,9 @@ android {
         create("release") {
             // 替换成你的 Release keystore 路径和密码
             keyAlias = "key88"
-            keyPassword = "drc8005ett"
+            keyPassword = ""
             storeFile = file("C:/Users/Ami/88key.jks")
-            storePassword = "drc8005ett"
+            storePassword = ""
         }
     }
 
